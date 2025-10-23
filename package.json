@@ -25,7 +25,12 @@
     "theme": "dark"
   },
   "keywords": [
-    "solardim"
+    "solardim",
+    "solarized",
+    "light",
+    "solarized light",
+    "solar",
+    "solar light"
   ],
   "license": "See license inf license.txt",
   "homepage": "https://github.com/RDMCz/vscode-better-solarized",

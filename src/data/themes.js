@@ -5,9 +5,10 @@ const themes = {
     light: "light",
   },
   solardim: {
-    back: "#B5B0A1", //TODO #D9D2C2
-    backDim: "#D3CBB7", //TODO
-    backSelDim: "#D1CBB8" //TODO
+    back: "#CCC9C3",
+    backDim: "#C6C3B8",
+    backSelDim: "#C4C2B9",
+    backHov: "#BFBBB0"
   },
   solarized: {
     black: "#000000",
@@ -18,10 +19,10 @@ const themes = {
     base03: "#002B36",
     base02: "#073642",
     base01: "#586E75",
-    base00: "#657B83",
+    base00: "#586E75",
     base0: "#839496",
     base1: "#93A1A1",
-    base2: "#E1DFD7",
+    base2: "#E1DFD8",
     base3: "#F0EEE6",
     yellow: "#B58900",
     orange: "#CB4B16",
@@ -34,16 +35,16 @@ const themes = {
     indigo: "#644EA0",
     blue: "#268BD2",
     cyan: "#2AA198",
-    green: "#859900",
+    green: "#839602",
     teal0: "#005A6F",
     teal1: "#004454",
     teal2: "#003847",
     light: {
       base0: "#BBBBBB",
       cream: "#D0CDC0",
-      gold0: "#D2C68D",
+      gold0: "#D2C58D",
       gold1: "#AC9D57",
-      gold2: "#D3AF86",
+      gold2: "#C6AD8A",
     },
     highContrast: {
       bg02: "#00141A",
