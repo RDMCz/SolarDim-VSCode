@@ -1,12 +1,13 @@
-/**
- * Theme data
- * @todo update the color palettes for the themes
- */
 const themes = {
   semanticHighlighting: true,
   type: {
     dark: "dark",
     light: "light",
+  },
+  solardim: {
+    back: "#B5B0A1", //TODO #D9D2C2
+    backDim: "#D3CBB7", //TODO
+    backSelDim: "#D1CBB8" //TODO
   },
   solarized: {
     black: "#000000",
@@ -20,8 +21,8 @@ const themes = {
     base00: "#657B83",
     base0: "#839496",
     base1: "#93A1A1",
-    base2: "#EEE8D5",
-    base3: "#FDF6E3",
+    base2: "#E1DFD7",
+    base3: "#F0EEE6",
     yellow: "#B58900",
     orange: "#CB4B16",
     red0: "#DC322F",
@@ -39,8 +40,8 @@ const themes = {
     teal2: "#003847",
     light: {
       base0: "#BBBBBB",
-      cream: "#DDD6C1",
-      gold0: "#DFCA88",
+      cream: "#D0CDC0",
+      gold0: "#D2C68D",
       gold1: "#AC9D57",
       gold2: "#D3AF86",
     },
