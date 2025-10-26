@@ -26,8 +26,8 @@ Light Modern|SolarDim|Solarized Light
 
 ## Installation
 
-* vsix TBP
-* marketplace TBP
+* VSIX Extension file __TBP__
+* VS Code Marketplace __TBP__
 
 ## Legal
 
@@ -54,11 +54,13 @@ This project is also licensed under the [MIT license](./LICENSE).
 
 &nbsp;
 
-* `vsce package` to create vsix file
+* `vsce package` to create a VSIX Extension file
 
 ## Known issues / TODO
 
 * 23 elements are referencing `themes.solarized.red`, but that color does not exist (?)
+
+<br>
 
 ---
 
