@@ -1,6 +1,6 @@
 # SolarDim VS Code Color Theme
 
-<img alt="solardim logo" src="./_markdown/images/solardim_capsule.png" height="125px" />
+<img alt="solardim logo" src="https://raw.githubusercontent.com/RDMCz/SolarDim-VSCode/refs/heads/master/_markdown/images/solardim_capsule.png" height="125px" />
 
 * [What is this](#what-is-this)
 * [Showcase](#showcase)
@@ -22,11 +22,11 @@ SolarDim for VS Code is a fork/edit of _vscode-better-solarized_ by _edheltzel_.
 
 Light Modern|SolarDim|Solarized Light
 ---|---|---
-![screenshot of default light vscode](./_markdown/images/showcase_light.png)|![screenshot of SolarDim vscode](./_markdown/images/showcase_solardim.png)|![screenshot of default solarized light vscode](./_markdown/images/showcase_solarized_light.png)
+![screenshot of default light vscode](https://raw.githubusercontent.com/RDMCz/SolarDim-VSCode/refs/heads/master/_markdown/images/showcase_light.png)|![screenshot of SolarDim vscode](https://raw.githubusercontent.com/RDMCz/SolarDim-VSCode/refs/heads/master/_markdown/images/showcase_solardim.png)|![screenshot of default solarized light vscode](https://raw.githubusercontent.com/RDMCz/SolarDim-VSCode/refs/heads/master/_markdown/images/showcase_solarized_light.png)
 
 ## Installation
 
-* VSIX Extension file __TBP__
+* [VSIX Extension file](https://github.com/RDMCz/SolarDim-VSCode/releases)
 * VS Code Marketplace __TBP__
 
 ## Legal

@@ -1153,6 +1153,8 @@
     "terminal.ansiBrightWhite": "#E1DFD8",
     "terminal.selectionBackground": "#D0CDC0",
     "terminal.background": "#F0EEE6",
-    "walkThrough.embeddedEditorBackground": "#00000014"
+    "walkThrough.embeddedEditorBackground": "#00000014",
+
+    "sideBar.foreground": "#4f6169"
   }
 }
