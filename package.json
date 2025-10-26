@@ -1,9 +1,9 @@
 {
-  "name": "ginfuru-better-solarized-dark-theme",
-  "displayName": "Better Solarized",
-  "description": "A Better Solarized theme for Visual Studio Code include light and dark versions",
-  "version": "0.10.9",
-  "publisher": "ginfuru",
+  "name": "solardim-vscode",
+  "displayName": "SolarDim",
+  "description": "A fork/edit of Better Solarized Light theme by edheltzel for Visual Studio Code",
+  "version": "0.0.1",
+  "publisher": "RDMCz",
   "engines": {
     "vscode": "^1.13.0"
   },
@@ -13,59 +13,34 @@
   "contributes": {
     "themes": [
       {
-        "label": "Better Solarized Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/better-solarized-dark.json"
-      },
-      {
-        "label": "Better Solarized Dark Italics",
-        "uiTheme": "vs-dark",
-        "path": "./themes/better-solarized-dark-italic.json"
-      },
-      {
-        "label": "Better Solarized Light",
+        "label": "SolarDim",
         "uiTheme": "vs",
-        "path": "./themes/better-solarized-light.json"
-      },
-      {
-        "label": "Better Selenized Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/better-selenized-dark.json"
-      },
-      {
-        "label": "Better Selenized Light",
-        "uiTheme": "vs",
-        "path": "./themes/better-selenized-light.json"
+        "path": "./themes/solardim.json"
       }
     ]
   },
-  "icon": "images/icon.png",
+  "icon": "icon.png",
   "galleryBanner": {
-    "color": "#00212b",
-    "theme": "dark"
+    "color": "#f0eee6",
+    "theme": "light"
   },
   "keywords": [
+    "solardim",
     "solarized",
-    "solarized dark",
+    "light",
     "solarized light",
-    "selenized",
-    "selenized dark",
-    "selenized light",
-    "sublime",
-    "atom"
+    "solar",
+    "solar light"
   ],
-  "license": "See license inf license.txt",
-  "homepage": "https://github.com/ginfuru/vscode-better-solarized",
+  "license": "See ./LICENSE and 'Legal' section of ./README.MD",
+  "homepage": "https://github.com/RDMCz/SolarDim-VSCode",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ginfuru/vscode-better-solarized.git"
+    "url": "https://github.com/RDMCz/SolarDim-VSCode.git"
   },
-  "bugs": "https://github.com/ginfuru/vscode-better-solarized/issues",
-  "packageManager": "pnpm@9.0.0+sha256.bdfc9a7b372b5c462176993e586492603e20da5864d2f8881edc2462482c76fa",
+  "bugs": "https://github.com/RDMCz/SolarDim-VSCode/issues",
   "scripts": {
-    "build": "pnpm dlx @11ty/eleventy",
-    "serve": "pnpm dlx @11ty/eleventy --watch",
-    "release": "gh release create v$npm_package_version --generate-notes --latest",
-    "publish": "vsce publish"
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --watch"
   }
 }

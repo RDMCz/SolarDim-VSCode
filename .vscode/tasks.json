@@ -6,7 +6,7 @@
 			"script": "serve",
 			"problemMatcher": [],
 			"label": "npm: serve",
-			"detail": "pnpm dlx @11ty/eleventy --watch"
+			"detail": "npm dlx @11ty/eleventy --watch"
 		}
 	]
 }
