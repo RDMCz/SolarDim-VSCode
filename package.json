@@ -1,8 +1,8 @@
 {
   "name": "solardim-vscode",
   "displayName": "SolarDim",
-  "description": "A fork/edit of Better Solarized Ligth theme by ginfuru for Visual Studio Code",
-  "version": "0.1.0",
+  "description": "A fork/edit of Better Solarized Light theme by edheltzel for Visual Studio Code",
+  "version": "0.0.1",
   "publisher": "RDMCz",
   "engines": {
     "vscode": "^1.13.0"
@@ -19,10 +19,10 @@
       }
     ]
   },
-  "icon": "images/icon.png",
+  "icon": "icon.png",
   "galleryBanner": {
-    "color": "#00212b",
-    "theme": "dark"
+    "color": "#f0eee6",
+    "theme": "light"
   },
   "keywords": [
     "solardim",
@@ -32,17 +32,15 @@
     "solar",
     "solar light"
   ],
-  "license": "See license inf license.txt",
-  "homepage": "https://github.com/RDMCz/vscode-better-solarized",
+  "license": "See ./LICENSE and 'Legal' section of ./README.MD",
+  "homepage": "https://github.com/RDMCz/SolarDim-VSCode",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RDMCz/vscode-better-solarized.git"
+    "url": "https://github.com/RDMCz/SolarDim-VSCode.git"
   },
-  "bugs": "https://github.com/RDMCz/vscode-better-solarized/issues",
+  "bugs": "https://github.com/RDMCz/SolarDim-VSCode/issues",
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --watch",
-    "release": "gh release create v$npm_package_version --generate-notes --latest",
-    "publish": "vsce publish"
+    "serve": "npx @11ty/eleventy --watch"
   }
 }
