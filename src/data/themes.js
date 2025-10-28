@@ -1,29 +1,28 @@
 const themes = {
+
     semanticHighlighting: true,
+
     type: {
         dark: "dark",
         light: "light",
     },
+
     solardim: {
-        back: "#CCC9C3",
-        backDim: "#C6C3B8",
-        backSelDim: "#C4C2B9",
-        backHov: "#BFBBB0"
-    },
-    solarized: {
         black: "#000000",
         white: "#FFFFFF",
-        base06: "#001e26",
-        base05: "#002731",
-        base04: "#00212B",
-        base03: "#002B36",
-        base02: "#073642",
-        base01: "#4f6169",
-        base00: "#4f6169",
-        base0: "#839496",
-        base1: "#879493",
-        base2: "#E1DFD8",
-        base3: "#F0EEE6",
+
+        base_f_6: "#001E26",
+        base_f_5: "#002731",
+        base_f_4: "#00212B",
+        base_f_3: "#002B36",
+        base_f_2: "#073642",
+        base_f_1: "#4F6169",
+
+        base_b_0: "#839496",
+        base_b_1: "#879493",
+        base_b_2: "#E1DFD8",
+        base_b_3: "#F0EEE6",
+
         yellow: "#948800",
         orange: "#B04213",
         red0: "#DC322F",
@@ -39,6 +38,7 @@ const themes = {
         teal0: "#005A6F",
         teal1: "#004454",
         teal2: "#003847",
+
         light: {
             base0: "#BBBBBB",
             cream: "#D0CDC0",
@@ -46,6 +46,22 @@ const themes = {
             gold1: "#AC9D57",
             gold2: "#C6AD8A",
         },
+
+        misc: {
+            back: "#CCC9C3",
+            backDim: "#C6C3B8",
+            backSelDim: "#C4C2B9",
+            backHov: "#BFBBB0",
+
+            misc1: "#723021",
+            misc2: "#5F6464",
+            misc3: "#DDD8C3",
+            misc4: "#78489D40",
+            misc5: "#8D8C8C90",
+            misc6: "#4B4426",
+            misc7: "#4B4426AA"
+        },
+
     }
 };
 
