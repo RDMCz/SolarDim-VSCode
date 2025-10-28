@@ -1,4 +1,4 @@
-# SolarDim VS Code Color Theme
+# SolarDim color theme for VS Code
 
 <img alt="solardim logo" src="https://raw.githubusercontent.com/RDMCz/SolarDim-VSCode/refs/heads/master/_markdown/images/solardim_capsule.png" height="125px" />
 
@@ -6,13 +6,12 @@
 * [Showcase](#showcase)
 * [Installation](#installation)
 * [Legal](#legal)
-* [Changelog](#changelog)
 * [Running locally](#running-locally)
-* [Known issues / TODO](#known-issues--todo)
+* [Changelog, TODO, known issues](#changelog-todo-known-issues)
 
 ## What is this
 
-SolarDim is an IDE color theme that aims to strike a balance between typical _light_ and _solarized light_ IDE color themes. It is based around the color `#f0EEE6`: the "Light grayish yellow".
+SolarDim is an IDE color theme that aims to strike a balance between typical _light_ and _solarized light_ IDE color themes. It is based around the color `#F0EEE6`: the "Light grayish yellow".
 
 The pure white background of light color themes can be too straining on the eyes, while the colors of solarized light color themes can be too warm, especially if you use a software night screen filter or wear computer glasses. If you found out that you can navigate the code better when using a light theme, but the themes mentioned above are too white or yellow for you, you might want to give SolarDim a try.
 
@@ -29,23 +28,26 @@ Light Modern|SolarDim|Solarized Light
 * [VSIX Extension file](https://github.com/RDMCz/SolarDim-VSCode/releases)
 * VS Code Marketplace __TBP__
 
+SolarDim is also available for [JetBrains IDEs](https://github.com/RDMCz/SolarDim-JetBrains).
+
+To install VSIX Extension in VS Code:
+
+1. Go to _Extensions_ tab (`Ctrl` + `Shift` + `X`)
+2. Click the three dots `...` button located at the top-right corner of _Extensions_ tab (above the extensions search bar)
+3. Choose _Install from VSIX..._ option
+4. Navigate to downloaded VSIX file and click _Install_
+
 ## Legal
 
 This is a fork of [vscode-better-solarized](https://github.com/edheltzel/vscode-better-solarized) by [edheltzel (ginfuru)](https://github.com/edheltzel), who has done most of the heavy lifting. I just changed a few color variables in an existing color theme project with an amazing Nunjucks/Eleventy workflow. You can star the original repo or [buy edheltzel a coffee](https://buymeacoffee.com/edheltzel).
 
-* [Archived edheltzel/vscode-better-solarized README](./_markdown/README-ORIGINAL.MD)
-* [Archived edheltzel/vscode-better-solarized CHANGELOG](./_markdown/CHANGELOG-ORIGINAL.MD)
-* [Archived edheltzel/vscode-better-solarized LICENSE](./_markdown/LICENSE-ORIGINAL.txt)
+* [Archived edheltzel/vscode-better-solarized README](https://github.com/RDMCz/SolarDim-VSCode/blob/master/_markdown/original/README-ORIGINAL.MD)
+* [Archived edheltzel/vscode-better-solarized CHANGELOG](https://github.com/RDMCz/SolarDim-VSCode/blob/master/_markdown/original/CHANGELOG-ORIGINAL.MD)
+* [Archived edheltzel/vscode-better-solarized LICENSE](https://github.com/RDMCz/SolarDim-VSCode/blob/master/_markdown/original/LICENSE-ORIGINAL.txt)
 
-This project is also licensed under the [MIT license](./LICENSE).
+Better Solarized then draws inspiration from original [Solarized](https://github.com/altercation/solarized) project by [altercation](https://github.com/altercation).
 
-## Changelog
-
-### 0.0.1
-
-* Changes compared to _Better Solarized Light_ v0.10.9:
-  * Base colors: _"Solarized Light colors"_ were swapped for _"SolarDim Colors"_
-  * `punctuation.definition.list.begin.markdown` (Markdown bullet lists) changed from blue to cyan
+This project is also licensed under the [MIT license](https://github.com/RDMCz/SolarDim-VSCode/blob/master/LICENSE).
 
 ## Running locally
 
@@ -54,11 +56,13 @@ This project is also licensed under the [MIT license](./LICENSE).
 
 &nbsp;
 
-* `vsce package` to create a VSIX Extension file
+* Run `vsce package` to create a VSIX Extension file
 
-## Known issues / TODO
+## Changelog, TODO, known issues
 
-* 23 elements are referencing `themes.solarized.red`, but that color does not exist (?)
+* [Changelog](https://github.com/RDMCz/SolarDim-VSCode/blob/master/_markdown/Changelog.MD)
+
+* [TODO, known issues](https://github.com/RDMCz/SolarDim-VSCode/blob/master/_markdown/TODO.MD)
 
 <br>
 
