@@ -526,11 +526,10 @@
       }
     },
     {
-      "name": "Markup - Strike",
-      "scope": "markup.strike",
+      "name": "Markup - Strikethrough",
+      "scope": "markup.strikethrough",
       "settings": {
-        "fontStyle": "strike",
-        "foreground": "#879493"
+        "fontStyle": "strikethrough"
       }
     },
     {
@@ -1064,7 +1063,7 @@
     "button.background": "#AC9D57",
     "selection.background": "#D2C58D66",
     "list.activeSelectionBackground": "#D2C58D",
-    "list.activeSelectionForeground": "#5F6464",
+    "list.activeSelectionForeground": "#000000",
     "list.focusBackground": "#D2C58D66",
     "list.hoverBackground": "#D2C58D44",
     "list.inactiveSelectionBackground": "#C4C2B9",

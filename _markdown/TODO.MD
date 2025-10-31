@@ -7,7 +7,7 @@
 I use VS Code these days mainly for writing Markdown, and I'm happy with how Markdown currently looks with this color theme. For actual programming, however, I prefer products from JetBrains, for which I also released SolarDim. This extension inherits from _vscode-better-solarized_ by _edheltzel_, while the JetBrains plugin inherits from _solarized_ by _espositocode_. The color palette of these two color themes is the same, but they differ in the specific color selection for the keywords of the given programming languages. I would like to review the colors for languages I use and I would also like them to be the same in both versions. I prefer some color decisions from one theme and some from the other (whether these were intentional or implied), so deciding how SolarDim should approach colors for programming languages isn't straightforward.
 
 * [ ] Colors of things other than programming language keywords
-  * [ ] Autocomplete menu – highlighted option should have darker font, not lighter (highlight background is orange), maybe turn down the orange a little bit
+  * [ ] Maybe increase contrast of lists (autocomplete, menubar, explorer, ...)
 * [ ] Python
   * [ ] Treat docstrings same as comments instead of treating them as string
   * [ ] Named parameters `f(par1=val1)`: make `par1` cyan instead of red; make equal sign black?
@@ -19,14 +19,18 @@ I use VS Code these days mainly for writing Markdown, and I'm happy with how Mar
   * [ ] Data types: `str`, `int`, `bytes` – make em blue instead of yellow
   * [ ] PyCharm does not support special styling for `True`/`False`/`None` – decide if I prefer red or make it the same as PyCharm
 * [ ] Rust
+  * [ ] Try to make it look the same as SolarDim in RustRover
 * [ ] Go
 * [ ] JavaScript
 * [ ] ...
 * [x] Markdown
-  * [ ] `~~striked text~~` has no special effect, maybe add some?
 * [ ] JSON
 * [ ] XML, HTML
 * [ ] CSS
+* [ ] C++ & C# (I usually use Visual Studio 2022 for these)
+
+> [!NOTE]
+> With all these unchecked boxes, it might seem that this color theme is unusable. However, it should be perfectly usable, and (unsurprisingly) I think it looks better than the default light color themes offered by VS Code. This list is just a precursor to an effort to unify the design with JetBrains IDEs, which, in my opinion, have taken syntax highlighting a step further. Since I don't actively program in VS Code and am currently working on other projects, this is not my priority right now, but hopefully I'll get around to it at some point.
 
 ## Known issues
 

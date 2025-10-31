@@ -1,5 +1,7 @@
 # SolarDim color theme for VS Code
 
+[← Back to parent repository](https://github.com/RDMCz/SolarDim)
+
 <img alt="solardim logo" src="https://raw.githubusercontent.com/RDMCz/SolarDim-VSCode/refs/heads/master/_markdown/images/solardim_capsule.png" height="125px" />
 
 * [What is this](#what-is-this)
@@ -30,10 +32,12 @@ Light Modern|SolarDim|Solarized Light
 
 SolarDim is also available for [JetBrains IDEs](https://github.com/RDMCz/SolarDim-JetBrains).
 
+<br>
+
 To install VSIX Extension in VS Code:
 
 1. Go to _Extensions_ tab (`Ctrl` + `Shift` + `X`)
-2. Click the three dots `...` button located at the top-right corner of _Extensions_ tab (above the extensions search bar)
+2. Click the three dots `...` button located at the top-right corner of _Extensions_ tab (above the extension search)
 3. Choose _Install from VSIX..._ option
 4. Navigate to downloaded VSIX file and click _Install_
 

@@ -12,8 +12,8 @@ const themes = {
         white: "#FFFFFF",
 
         base_f_6: "#001E26",
-        base_f_5: "#002731",
-        base_f_4: "#00212B",
+        base_f_5: "#00212B",
+        base_f_4: "#002731",
         base_f_3: "#002B36",
         base_f_2: "#073642",
         base_f_1: "#4F6169",
@@ -54,7 +54,6 @@ const themes = {
             backHov: "#BFBBB0",
 
             misc1: "#723021",
-            misc2: "#5F6464",
             misc3: "#DDD8C3",
             misc4: "#78489D40",
             misc5: "#8D8C8C90",
