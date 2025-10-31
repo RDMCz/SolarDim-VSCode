@@ -4,6 +4,11 @@
 
 ## Changelog
 
+### 0.0.2
+
+* Markdown: `~~striked text~~` is now visibly striked in editor.
+* The text of highlighted items in lists (such as menus and autocomplete suggestions) is now black for better contrast.
+
 ### 0.0.1
 
 * Initial release
