@@ -8,7 +8,7 @@ I use VS Code these days mainly for writing Markdown, and I'm happy with how Mar
 
 * [ ] Colors of things other than programming language keywords
   * [ ] Maybe increase contrast of lists (autocomplete, menubar, explorer, ...)
-* [ ] Python
+* [ ] Python&ensp;(try to unify with SolarDim for PyCharm)
   * [ ] Treat docstrings same as comments instead of treating them as string
   * [ ] Named parameters `f(par1=val1)`: make `par1` cyan instead of red; make equal sign black?
   * [ ] Calling functions should be blue, but is sometimes black (maybe VS Code cannot detect them properly? maybe it will get better with Pytohn plugin?)
@@ -18,16 +18,19 @@ I use VS Code these days mainly for writing Markdown, and I'm happy with how Mar
   * [ ] Comparisons: `and`, `or`, `not`, ... – violet; `==`, ... – black
   * [ ] Data types: `str`, `int`, `bytes` – make em blue instead of yellow
   * [ ] PyCharm does not support special styling for `True`/`False`/`None` – decide if I prefer red or make it the same as PyCharm
-* [ ] Rust
-  * [ ] Try to make it look the same as SolarDim in RustRover
-* [ ] Go
-* [ ] JavaScript
-* [ ] ...
+* [ ] Rust&ensp;(try to unify with SolarDim for RustRover)
+* [ ] C++&ensp;(try to unify with SolarDim for CLion)
+* [ ] Go&ensp;(try to unify with SolarDim for Goland)
+* [ ] JavaScript&ensp;(try to unify with SolarDim for WebStorm)
+* [ ] —————
 * [x] Markdown
+  * [ ] "Raw" link `<link>` is green, as it should be; but bold link `__<link>__` is red; make it green as well
 * [ ] JSON
 * [ ] XML, HTML
 * [ ] CSS
-* [ ] C++ & C# (I usually use Visual Studio 2022 for these)
+* [ ] —————
+* [ ] Java
+* [ ] C#
 
 > [!NOTE]
 > With all these unchecked boxes, it might seem that this color theme is unusable. However, it should be perfectly usable, and (unsurprisingly) I think it looks better than the default light color themes offered by VS Code. This list is just a precursor to an effort to unify the design with JetBrains IDEs, which, in my opinion, have taken syntax highlighting a step further. Since I don't actively program in VS Code and am currently working on other projects, this is not my priority right now, but hopefully I'll get around to it at some point.
