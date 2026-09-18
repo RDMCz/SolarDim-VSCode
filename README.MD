@@ -56,9 +56,9 @@ This project is also licensed under the [MIT license](https://github.com/RDMCz/S
 ## Running locally
 
 * `Ctrl` + `F5` to launch extension development instance of VS Code
-* Run either `npm run build` after each change or `npm run serve` for "hot reload"
+* Run either `npm run build` after each change or `npm run serve` for hot reload
 
-&nbsp;
+<br>
 
 * Run `vsce package` to create a VSIX Extension file
 
@@ -68,8 +68,8 @@ This project is also licensed under the [MIT license](https://github.com/RDMCz/S
 
 * [TODO, known issues](https://github.com/RDMCz/SolarDim-VSCode/blob/master/_markdown/TODO.MD)
 
-<br>
-
 ---
 
 [VSCode Color reference](https://code.visualstudio.com/api/references/theme-color)
+
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> → `Developer: Inspect Editor Tokens and Scopes`

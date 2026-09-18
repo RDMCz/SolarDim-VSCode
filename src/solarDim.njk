@@ -13,7 +13,7 @@ permalink: /solardim.json
         "background": "{{ themes.solardim.base_b_3 }}",
         "foreground": "{{ themes.solardim.base_f_1 }}",
         "gutter": "{{ themes.solardim.base_b_3 }}",
-        "popupCss": "\nhtml {\n  background-color: {{ themes.solardim.base_b_2 }};\n  color: {{ themes.solardim.base_f_1 }};\n}\n\na {\n  color: {{ themes.solardim.blue }};\n}\n\n.error,\n.deleted {\n  color: {{ themes.solardim.red }};\n}\n\n.success,\n.inserted,\n.name {\n  color: {{ themes.solardim.green }};\n}\n\n.warning,\n.modified {\n  color: {{ themes.solardim.yellow }};\n}\n\n.type {\n  color: {{ themes.solardim.cyan }};\n  font-style: italic;\n}\n\n.param {\n  color: {{ themes.solardim.orange }};\n}\n\n.current {\n  text-decoration: underline;\n}\n",
+        "popupCss": "\nhtml {\n  background-color: {{ themes.solardim.base_b_2 }};\n  color: {{ themes.solardim.base_f_1 }};\n}\n\na {\n  color: {{ themes.solardim.blue }};\n}\n\n.error,\n.deleted {\n  color: {{ themes.solardim.red2 }};\n}\n\n.success,\n.inserted,\n.name {\n  color: {{ themes.solardim.green }};\n}\n\n.warning,\n.modified {\n  color: {{ themes.solardim.yellow }};\n}\n\n.type {\n  color: {{ themes.solardim.cyan }};\n  font-style: italic;\n}\n\n.param {\n  color: {{ themes.solardim.orange }};\n}\n\n.current {\n  text-decoration: underline;\n}\n",
         "selectionBorder": "{{ themes.solardim.black }}16",
         "stackGuide": "{{ themes.solardim.black }}40"
       }
@@ -30,6 +30,13 @@ permalink: /solardim.json
       }
     },
     {
+      "name": "RainbowCSV darker gray",
+      "scope": "comment.rainbow4",
+      "settings": {
+        "foreground": "{{ themes.solardim.base_f_1 }}"
+      }
+    },
+    {
       "name": "Nunjucks/Liquid/Jekyll Tags",
       "scope": [
         "punctuation.output.jekyll",
@@ -43,7 +50,7 @@ permalink: /solardim.json
         "punctuation.tag.njk"
       ],
       "settings": {
-        "foreground": "{{ themes.solardim.light.base0 }}"
+        "foreground": "{{ themes.solardim.base_f_1 }}"
       }
     },
     {
@@ -54,7 +61,7 @@ permalink: /solardim.json
         "entity.name.tag.njk"
       ],
       "settings": {
-        "foreground": "{{ themes.solardim.magenta0 }}",
+        "foreground": "{{ themes.solardim.magenta }}",
         "fontStyle": "italic"
       }
     },
@@ -66,7 +73,7 @@ permalink: /solardim.json
         "punctuation.tag.njk"
       ],
       "settings": {
-        "foreground": "{{ themes.solardim.light.base0 }}"
+        "foreground": "{{ themes.solardim.base_f_1 }}"
       }
     },
     {
@@ -75,10 +82,9 @@ permalink: /solardim.json
         "variable.other.jekyll",
         "variable.other.liquid",
         "variable.other.njk"
-
       ],
       "settings": {
-        "foreground": "{{ themes.solardim.light.base0 }}"
+        "foreground": "{{ themes.solardim.base_f_1 }}"
       }
     },
     {
@@ -106,21 +112,12 @@ permalink: /solardim.json
       "settings": {
         "foreground": "{{ themes.solardim.base_f_1 }}"
       }
-    },
-    {
-      "name": "Invalid",
-      "scope": "invalid",
-      "settings": {
-        "background": "{{ themes.solardim.red }}",
-        "foreground": "{{ themes.solardim.red }}"
-      }
-    },
+    },    
     {
       "name": "Invalid",
       "scope": "invalid.deprecated",
       "settings": {
-        "background": "{{ themes.solardim.violet }}",
-        "foreground": "{{ themes.solardim.red }}"
+        "background": "{{ themes.solardim.violet }}"
       }
     },
     {
@@ -141,15 +138,25 @@ permalink: /solardim.json
         "constant.other.color",
         "punctuation",
         "meta.tag",
-        "punctuation.definition.tag",
         "punctuation.separator.inheritance.php",
-        "punctuation.definition.tag.html",
-        "punctuation.definition.tag.begin.html",
-        "punctuation.definition.tag.end.html",
         "punctuation.section.embedded",
         "keyword.other.template",
         "keyword.other.substitution"
       ],
+      "settings": {
+        "foreground": "{{ themes.solardim.black }}"
+      }
+    },
+    {
+      "name": "String operator",
+      "scope": "punctuation.definition.string",
+      "settings": {
+        "foreground": "{{ themes.solardim.green }}"
+      }
+    },
+    {
+      "name": "Tag operator",
+      "scope": "punctuation.definition.tag",
       "settings": {
         "foreground": "{{ themes.solardim.cyan }}"
       }
@@ -171,6 +178,7 @@ permalink: /solardim.json
         "entity.name.function",
         "variable.function",
         "support.function",
+        "meta.function-call.generic",
         "keyword.other.special-method",
         "meta.block-level"
       ],
@@ -189,17 +197,25 @@ permalink: /solardim.json
       }
     },
     {
-      "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
+      "name": "Number, Constant, Tag Attribute, Embedded",
       "scope": [
         "constant.numeric",
         "constant.language",
         "support.constant",
         "constant.character",
-        "variable.parameter",
         "keyword.other.unit"
       ],
       "settings": {
         "foreground": "{{ themes.solardim.orange }}"
+      }
+    },
+    {
+      "name": "Function Argument",
+      "scope": [
+        "variable.parameter"
+      ],
+      "settings": {
+        "foreground": "{{ themes.solardim.teal }}"
       }
     },
     {
@@ -222,8 +238,7 @@ permalink: /solardim.json
       "name": "Class, Support",
       "scope": [
         "entity.name.class",
-        "entity.name.type.class",
-        "support.type",
+        "entity.name.type.class",        
         "support.class",
         "support.other.namespace.use.php",
         "meta.use.php",
@@ -235,22 +250,17 @@ permalink: /solardim.json
       }
     },
     {
-      "name": "Sub-methods",
-      "scope": [
-        "entity.name.module.js",
-        "variable.import.parameter.js",
-        "variable.other.class.js"
-      ],
+      "name": "Built-in data type",
+      "scope": "support.type",
       "settings": {
-        "foreground": "{{ themes.solardim.red }}"
+        "foreground": "{{ themes.solardim.blue }}"
       }
     },
     {
       "name": "Language methods",
       "scope": "variable.language",
       "settings": {
-        "fontStyle": "italic",
-        "foreground": "{{ themes.solardim.red }}"
+        "fontStyle": "italic"
       }
     },
     {
@@ -285,13 +295,6 @@ permalink: /solardim.json
       }
     },
     {
-      "name": "Deleted",
-      "scope": "markup.deleted",
-      "settings": {
-        "foreground": "{{ themes.solardim.red }}"
-      }
-    },
-    {
       "name": "Changed",
       "scope": "markup.changed",
       "settings": {
@@ -309,7 +312,7 @@ permalink: /solardim.json
       "name": "Escape Characters",
       "scope": "constant.character.escape",
       "settings": {
-        "foreground": "{{ themes.solardim.orange }}"
+        "foreground": "{{ themes.solardim.magenta }}"
       }
     },
     {
@@ -352,8 +355,7 @@ permalink: /solardim.json
       "name": "ES7 Bind Operator",
       "scope": "source.js constant.other.object.key.js string.unquoted.label.js",
       "settings": {
-        "fontStyle": "italic",
-        "foreground": "{{ themes.solardim.red }}"
+        "fontStyle": "italic"
       }
     },
     {
@@ -363,7 +365,7 @@ permalink: /solardim.json
         "source.json meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string"
       ],
       "settings": {
-        "foreground": "{{ themes.solardim.red }}bf"
+        "foreground": "{{ themes.solardim.red2 }}bf"
       }
     },
     {
@@ -413,7 +415,7 @@ permalink: /solardim.json
         "source.json meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string"
       ],
       "settings": {
-        "foreground": "{{ themes.solardim.red }}"
+        "foreground": "{{ themes.solardim.red2 }}"
       }
     },
     {
@@ -671,13 +673,6 @@ permalink: /solardim.json
       }
     },
     {
-      "name": "Markdown - TODO Cancelled",
-      "scope": "punctuation.definition.list_item.todo.cancelled",
-      "settings": {
-        "foreground": "{{ themes.solardim.red }}"
-      }
-    },
-    {
       "name": "Markdown - TODO GitHub Checkbox",
       "scope": "markup.checkbox.markdown markup.checkbox.checked_symbol.markdown",
       "settings": {
@@ -909,75 +904,10 @@ permalink: /solardim.json
       }
     },
     {
-      "name": "Markdown - Admonition Header (Danger)",
-      "scope": "markup.admonition.markdown.danger markup.admonition.header.markdown",
-      "settings": {
-        "background": "{{ themes.solardim.red }}50"
-      }
-    },
-    {
-      "name": "Markdown - Admonition Body (Danger)",
-      "scope": "markup.admonition.markdown.danger markup.admonition.body.markdown",
-      "settings": {
-        "background": "{{ themes.solardim.red }}15"
-      }
-    },
-    {
-      "name": "Markdown - Admonition Punctuation (Danger)",
-      "scope": [
-        "markup.admonition.markdown.danger punctuation.definition.admonition.markdown",
-        "markup.admonition.markdown.danger punctuation.definition.heading",
-        "markup.admonition.markdown.danger punctuation.definition.table.vertical-line",
-        "markup.admonition.markdown.danger punctuation.definition.table.horizontal-line",
-        "markup.admonition.markdown.danger punctuation.definition.table.alignments",
-        "markup.admonition.markdown.danger punctuation.definition.heading",
-        "markup.admonition.markdown.danger punctuation.definition.bold",
-        "markup.admonition.markdown.danger punctuation.definition.italic",
-        "markup.admonition.markdown.danger punctuation.definition.list_item",
-        "markup.admonition.markdown.danger punctuation.definition.raw",
-        "markup.admonition.markdown.danger markup.checkbox.markdown",
-        "markup.admonition.markdown.danger punctuation.definition.list_item.todo.pending",
-        "markup.admonition.markdown.danger meta.link punctuation.definition",
-        "markup.admonition.markdown.danger meta.link.inline markup.underline.link",
-        "markup.admonition.markdown.danger meta.link.reference.markdown constant.other.reference.link.markdown",
-        "markup.admonition.markdown.danger punctuation.definition.entity.html",
-        "markup.admonition.markdown.danger meta.separator.markdown",
-        "markup.admonition.markdown.danger markup.table.markdown punctuation.definition.table.vertical-line.markdown",
-        "markup.admonition.markdown.danger meta.definition.language.raw.block.fenced.markdown"
-      ],
-      "settings": {
-        "foreground": "{{ themes.solardim.red }}75"
-      }
-    },
-    {
       "name": "Markdown - Admonition Section Type (Danger)",
       "scope": "markup.admonition.markdown.danger entity.name.admonition.markdown",
       "settings": {
-        "fontStyle": "bold",
-        "foreground": "{{ themes.solardim.red }}"
-      }
-    },
-    {
-      "name": "Markdown - Admonition Element Background (Danger)",
-      "scope": [
-        "markup.admonition.markdown.danger markup.table",
-        "markup.admonition.markdown.danger markup.raw",
-        "markup.admonition.markdown.danger markup.raw.block.fenced meta.language",
-        "markup.admonition.markdown.danger punctuation.definition.blockquote.markdown",
-        "markup.admonition.markdown.danger meta.separator",
-        "markup.admonition.markdown.danger markup.raw.inline",
-        "markup.admonition.markdown.danger markup.raw.block"
-      ],
-      "settings": {
-        "background": "{{ themes.solardim.red }}25"
-      }
-    },
-    {
-      "name": "Markdown - Admonition Quote (Danger)",
-      "scope": "markup.admonition.markdown.danger markup.quote punctuation.definition.blockquote.markdown",
-      "settings": {
-        "background": "{{ themes.solardim.red }}35",
-        "foreground": "{{ themes.solardim.red }}35"
+        "fontStyle": "bold"
       }
     },
     {
@@ -1051,6 +981,39 @@ permalink: /solardim.json
         "background": "{{ themes.solardim.green }}35",
         "foreground": "{{ themes.solardim.green }}35"
       }
+    },
+    {
+      "name": "Markdown inline code",
+      "scope": "markup.inline.raw.string.markdown",
+      "settings": {
+        "foreground": "{{ themes.solardim.teal }}"
+      }
+    },
+    {
+      "name": "Python multiline comment",
+      "scope": "string.quoted.docstring.multi.python",
+      "settings": {
+        "foreground": "{{ themes.solardim.base_b_1 }}"
+      }
+    },
+    {
+      "name": "Python and/or/not",
+      "scope": "keyword.operator.logical.python",
+      "settings": {
+        "foreground": "{{ themes.solardim.violet }}"
+      }
+    },
+    {
+      "name": "C# summary etc",
+      "scope": [
+        "comment.block.documentation.cs punctuation.definition.tag",
+        "comment.block.documentation.cs entity.name.tag",
+        "comment.block.documentation.cs entity.other.attribute-name",
+        "keyword.other.documentation.javadoc.java"
+      ],
+      "settings": {
+        "foreground": "{{ themes.solardim.base_b_1 }}"
+      }
     }
   ],
   "colors": {
@@ -1087,28 +1050,28 @@ permalink: /solardim.json
     "editorHoverWidget.background": "{{ themes.solardim.misc.backHov }}",
     "editorBracketHighlight.foreground1": "{{ themes.solardim.indigo }}",
     "editorBracketHighlight.foreground2": "{{ themes.solardim.cyan }}",
-    "editorBracketHighlight.foreground3": "{{ themes.solardim.magenta0 }}",
+    "editorBracketHighlight.foreground3": "{{ themes.solardim.magenta }}",
     "editorBracketHighlight.foreground4": "{{ themes.solardim.blue }}",
     "editorBracketHighlight.foreground5": "{{ themes.solardim.orange }}",
-    "editorBracketHighlight.foreground6": "{{ themes.solardim.teal0 }}",
+    "editorBracketHighlight.foreground6": "{{ themes.solardim.teal }}",
     "editorBracketHighlight.unexpectedBracket.foreground": "{{ themes.solardim.red1 }}",
     "editorBracketMatch.border": "{{ themes.solardim.base_f_1 }}A0",
     "editorBracketPairGuide.activeBackground1": "{{ themes.solardim.indigo }}",
     "editorBracketPairGuide.activeBackground2": "{{ themes.solardim.cyan }}",
-    "editorBracketPairGuide.activeBackground3": "{{ themes.solardim.magenta0 }}",
+    "editorBracketPairGuide.activeBackground3": "{{ themes.solardim.magenta }}",
     "editorBracketPairGuide.activeBackground4": "{{ themes.solardim.blue }}",
     "editorBracketPairGuide.activeBackground5": "{{ themes.solardim.orange }}",
-    "editorBracketPairGuide.activeBackground6": "{{ themes.solardim.teal0 }}",
+    "editorBracketPairGuide.activeBackground6": "{{ themes.solardim.teal }}",
     "editorLineNumber.activeForeground": "{{ themes.solardim.base_f_1 }}",
     "peekViewResult.background": "{{ themes.solardim.base_b_2 }}",
     "peekViewEditor.background": "{{ themes.solardim.base_b_3 }}",
     "peekViewTitle.background": "{{ themes.solardim.base_b_2 }}",
     "peekView.border": "{{ themes.solardim.yellow }}",
-    "peekViewEditor.matchHighlightBackground": "{{ themes.solardim.misc.misc4 }}",
+    "peekViewEditor.matchHighlightBackground": "{{ themes.solardim.misc.misc4 }}40",
     "editorStickyScroll.background": "{{ themes.solardim.base_b_2 }}",
     "editorStickyScrollHover.background": "{{ themes.solardim.base_f_1 }}30",
     "titleBar.activeBackground": "{{ themes.solardim.base_b_2 }}",
-    "editorGhostText.foreground": "{{ themes.solardim.misc.misc5 }}",
+    "editorGhostText.foreground": "{{ themes.solardim.misc.misc5 }}90",
     "editorGroup.border": "{{ themes.solardim.light.cream }}",
     "editorGroup.dropBackground": "{{ themes.solardim.light.cream }}AA",
     "editorGroupHeader.tabsBackground": "{{ themes.solardim.misc.back }}",
@@ -1118,7 +1081,7 @@ permalink: /solardim.json
     "tab.inactiveBackground": "{{ themes.solardim.misc.backDim }}",
     "tab.activeModifiedBorder": "{{ themes.solardim.orange }}",
     "activityBar.background": "{{ themes.solardim.light.cream }}",
-    "activityBar.foreground": "{{ themes.solardim.misc.misc6 }}",
+    "activityBar.foreground": "{{ themes.solardim.black }}",
     "activityBarBadge.background": "{{ themes.solardim.yellow }}",
     "panel.border": "{{ themes.solardim.light.cream }}",
     "sideBar.background": "{{ themes.solardim.base_b_2 }}",
@@ -1133,24 +1096,24 @@ permalink: /solardim.json
     "statusBarItem.prominentHoverBackground": "{{ themes.solardim.light.cream }}99",
     "debugToolBar.background": "{{ themes.solardim.light.cream }}",
     "debugExceptionWidget.background": "{{ themes.solardim.light.cream }}",
-    "debugExceptionWidget.border": "{{ themes.solardim.magenta1 }}",
+    "debugExceptionWidget.border": "{{ themes.solardim.magenta }}",
     "pickerGroup.border": "{{ themes.solardim.cyan }}99",
     "pickerGroup.foreground": "{{ themes.solardim.cyan }}99",
     "extensionButton.prominentBackground": "{{ themes.solardim.yellow }}",
-    "extensionButton.prominentHoverBackground": "{{ themes.solardim.misc.misc7 }}",
-    "terminal.ansiBlack": "{{ themes.solardim.base_f_2 }}",
-    "terminal.ansiRed": "{{ themes.solardim.red }}",
+    "extensionButton.prominentHoverBackground": "{{ themes.solardim.misc.misc7 }}AA",
+    "terminal.ansiBlack": "{{ themes.solardim.base_f_5 }}",
+    "terminal.ansiRed": "{{ themes.solardim.misc.ansiRed }}",
     "terminal.ansiGreen": "{{ themes.solardim.green }}",
     "terminal.ansiYellow": "{{ themes.solardim.yellow }}",
     "terminal.ansiBlue": "{{ themes.solardim.blue }}",
-    "terminal.ansiMagenta": "{{ themes.solardim.magenta0 }}",
+    "terminal.ansiMagenta": "{{ themes.solardim.magenta }}",
     "terminal.ansiCyan": "{{ themes.solardim.cyan }}",
     "terminal.ansiWhite": "{{ themes.solardim.base_b_2 }}",
     "terminal.ansiBrightBlack": "{{ themes.solardim.base_f_1 }}",
     "terminal.ansiBrightRed": "{{ themes.solardim.orange }}",
     "terminal.ansiBrightGreen": "{{ themes.solardim.base_f_1 }}",
     "terminal.ansiBrightYellow": "{{ themes.solardim.base_f_1 }}",
-    "terminal.ansiBrightBlue": "{{ themes.solardim.base_b_0 }}",
+    "terminal.ansiBrightBlue": "{{ themes.solardim.misc.ansiBrightBlue }}",
     "terminal.ansiBrightMagenta": "{{ themes.solardim.violet }}",
     "terminal.ansiBrightCyan": "{{ themes.solardim.base_b_1 }}",
     "terminal.ansiBrightWhite": "{{ themes.solardim.base_b_2 }}",
@@ -1158,6 +1121,8 @@ permalink: /solardim.json
     "terminal.background": "{{ themes.solardim.base_b_3 }}",
     "walkThrough.embeddedEditorBackground": "{{ themes.solardim.black }}14",
 
-    "sideBar.foreground": "{{ themes.solardim.base_f_1 }}"
+    "sideBar.foreground": "{{ themes.solardim.base_f_1 }}",
+    "menu.selectionForeground": "{{ themes.solardim.black }}",
+    "menubar.selectionForeground": "{{ themes.solardim.black }}"
   }
 }
