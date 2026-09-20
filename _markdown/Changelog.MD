@@ -4,6 +4,10 @@
 
 ## Changelog
 
+### 0.1.1
+
+* Introduce new _darkCyan_ color (#43736F), which is now used for _keyword.operator_
+
 ### 0.1.0
 
 * Global:

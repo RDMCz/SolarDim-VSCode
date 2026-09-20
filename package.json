@@ -2,7 +2,7 @@
   "name": "solardim-vscode",
   "displayName": "SolarDim",
   "description": "A \"slightly solarized\" color theme.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "RDMCz",
   "engines": {
     "vscode": "^1.13.0"

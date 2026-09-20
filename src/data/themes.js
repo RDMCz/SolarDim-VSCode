@@ -34,6 +34,8 @@ const themes = {
         green: "#748502",
         teal: "#00627A",
 
+        darkCyan: "#43736F",
+
         light: {
             cream: "#D0CDC0",
             gold0: "#D2C58D",
